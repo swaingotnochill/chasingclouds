@@ -20,11 +20,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find(
-    (project) => project.slug === "planetfall"
-  )!;
-  const top2 = allProjects.find((project) => project.slug === "envshare")!;
-  const top3 = allProjects.find((project) => project.slug === "qstash")!;
+  const featured = allProjects.find((project) => project.slug === "designgpt")!;
+  const top2 = allProjects.find((project) => project.slug === "m2kplugin")!;
+  const top3 = allProjects.find((project) => project.slug === "hopper")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
